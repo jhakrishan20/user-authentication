@@ -9,7 +9,8 @@ exports.connectMongoose = async ()=>{
 }
 
 const userSchema = new mongoose.Schema({
-    name: String,
+    firstName: String,
+    lastName: String,
     username: {
         type: String,
         required: true,
